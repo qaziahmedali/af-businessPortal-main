@@ -1,0 +1,133 @@
+@import '../fonts/ibm-plex/stylesheet.css';
+
+* {
+  box-sizing: border-box;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  outline: none;
+}
+
+html {
+  font-family: sans-serif;
+}
+:root {
+  --primary: #f7b445;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  background-color: #f6fffc !important;
+  font-family: 'IBMPlexSans-Regular';
+  overflow: overlay;
+}
+
+::selection {
+  background: var(--primary) !important;
+  color: rgb(48, 48, 48);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c4c2bf;
+
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* width */
+.styleScroll::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.et-actions svg:hover {
+  color: #13384a !important;
+}
+.et-actions .approval:hover {
+  color: green !important;
+}
+.et-actions .reject:hover {
+  color: red !important;
+}
+.et-actions svg{
+  cursor: pointer;
+}
+.et-table th {
+  color: rgba(19, 56, 74, 0.5);
+}
+.et-table td,
+.et-table th {
+  white-space: nowrap;
+  font-size: 14px;
+}
+.et-table tfoot td {
+  border: none;
+}
+.dashboardPageContent {
+  margin-left: 255px;
+  transition: 0.2s all;
+}
+.react-calendar {
+  border: none !important;
+  margin: 0 auto;
+}
+.react-calendar__tile--active {
+  background: #3ece9e !important;
+}
+.max-width-select .custom-select__control {
+  width: 90%;
+  background-color: unset !important;
+  border-color: unset !important;
+  color: white !important;
+}
+
+.max-width-select .custom-select__menu{
+  background-color: #1A202c !important;
+  color: white;
+}
+
+.max-width-select  .custom-select__single-value{
+  color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  .dashboardPageContent {
+    width: calc(100vw - 500px);
+  }
+  .dashboardPageContent.expand {
+    width: calc(100vw - 260px);
+  }
+}
